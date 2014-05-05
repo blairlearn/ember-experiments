@@ -1,0 +1,16 @@
+.dictionary-box .atoz ul li {
+                float: left;
+                margin-right: 3px;
+                padding: 0;
+                background: none;
+                list-style: none;
+                list-style-image: none;
+            }
+
+.dictionary-alpha-list{
+    font-weight: bold;
+}
+            
+.clear {
+    clear: both;
+}

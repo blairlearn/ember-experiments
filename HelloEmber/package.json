@@ -1,0 +1,18 @@
+{
+    "name": "Your_Module_Name",
+    "title": "TITLE OF APP",
+    "description": "Description",
+    "version": "1.0.0",
+    "dependencies": {
+        "express" : "3.x",
+        "http-proxy" : "~0.10.0"
+    },
+    "devDependencies" : {
+        "grunt" : "~0.4.0",
+        "grunt-contrib-jshint" : "~0.6.3",
+	"grunt-contrib-requirejs" : "~0.4.3",
+        "grunt-contrib-copy" : "~0.5.0",
+        "grunt-contrib-clean": "~0.5.0"
+    },
+    "main" : "./server/server"
+}

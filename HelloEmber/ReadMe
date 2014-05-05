@@ -1,0 +1,7 @@
+Steps to build:
+1. Install nodejs
+2. run 'npm install -g grunt-cli'
+3. run 'npm install -g nodemon'
+4. run 'npm install'
+5. run 'grunt'
+6. run 'nodemon'
