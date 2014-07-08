@@ -25,7 +25,14 @@
     <script>require('initialize');</script>
 
 <script type="text/x-handlebars" id="components/nested-folder">
-	NDX: Folder -- {{name}}!!
+	{{folder.name}}
+        {{#if folder.subtree}}
+        <ul>
+        {{#each folder.subtree}}
+            <li>{{nested-folder folder=this}}</li>
+        {{/each}}
+        </ul>
+        {{/if}}
 </script>
     
   </body>
