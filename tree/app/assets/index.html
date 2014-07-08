@@ -25,14 +25,17 @@
     <script>require('initialize');</script>
 
 <script type="text/x-handlebars" id="components/nested-folder">
-	{{folder.name}}
+    {{#if folderlist}}
+    <ul>
+        {{#each folder in folderlist}}
+        <li>{{folder.name}}
         {{#if folder.subtree}}
-        <ul>
-        {{#each folder.subtree}}
-            <li>{{nested-folder folder=this}}</li>
-        {{/each}}
-        </ul>
+            {{nested-folder folderlist=folder.subtree}}
         {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
 </script>
     
   </body>
