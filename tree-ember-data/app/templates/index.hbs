@@ -1,0 +1,6 @@
+<h2>Welcome to Ember.js</h2>
+<ul>
+  {{#each item in root}}
+    <li>{{item.name}} | {{nested-folder name=item.name}}</li>
+  {{/each}}
+</ul>
