@@ -1,12 +1,12 @@
-module.exports = App.Tree = DS.Model.extend({
+module.exports = App.Zaboop = DS.Model.extend({
     name: DS.attr('string'),
     root: DS.hasMany('node', {async: true})
 });
 
-App.Tree.FIXTURES = [
+App.Zaboop.FIXTURES = [
     {
         id: 0,
         name: 'root',
-        root: [0,1,2,3,4]
+        root: [1,2,3,4,5,6]
     }
 ];
