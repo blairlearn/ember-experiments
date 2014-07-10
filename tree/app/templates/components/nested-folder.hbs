@@ -1,11 +1,4 @@
-<!--
-     Having the component template in an HBS file doesn't work.
-     For the time being, the actual working version of this
-     is in /app/assets/index.html in the "components/nested-folder"
-     <script> tag.
--->
-
-    {{#if folderlist}}
+   {{#if folderlist}}
     <ul>
         {{#each folder in folderlist}}
         <li>{{folder.name}}
