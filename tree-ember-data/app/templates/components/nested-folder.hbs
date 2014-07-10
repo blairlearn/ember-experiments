@@ -1,1 +1,11 @@
-<!--p>HBS: Folder -- {{name}}!!</p-->
+   {{#if folderlist}}
+    <ul>
+        {{#each folder in folderlist}}
+        <li>{{folder.name}}
+        {{#if folder.subtree}}
+            {{nested-folder folderlist=folder.subtree}}
+        {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}

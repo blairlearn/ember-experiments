@@ -2,33 +2,34 @@
 
 module.exports = App.Node = DS.Model.extend({
     name: DS.attr('string'),
-    number: DS.attr('number')
+    number: DS.attr('number'),
+    children: DS.hasMany('subNode', {async: true} )
 });
 
 App.Node.FIXTURES = [
     {
         id: 0,
         name: 'folder 1',
-        number: 3.14    // Almost pi.
+        children: []
     },
     {
         id: 1,
         name: 'folder 2',
-        number: 42      // The answer
+        children: [0,1]
     },
     {
         id: 2,
         name: 'folder 3',
-        number: 86      // Agent of Control
+        children: []
     },
     {
         id: 3,
         name: 'folder 4',
-        number: 99      // Agent of Control
+        children: []
     },
     {
         id: 4,
         name: 'folder 5',
-        number: 9       // You say you want a revolution.
+        children: []
     }
 ];
