@@ -2,7 +2,6 @@
 
 module.exports = App.Node = DS.Model.extend({
     name: DS.attr('string'),
-    number: DS.attr('number'),
     subtree: DS.hasMany('node', {async: true} )
 });
 

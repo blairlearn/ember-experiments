@@ -1,7 +1,7 @@
    {{#if folderlist}}
     <ul>
         {{#each folder in folderlist}}
-        <li>{{folder.name}}
+        <li>{{individual-node node=folder}}
         {{#if folder.subtree}}
             {{nested-folder folderlist=folder.subtree}}
         {{/if}}
