@@ -2,13 +2,17 @@
 
 module.exports = App.Node = DS.Model.extend({
     name: DS.attr('string'),
-    subtree: DS.hasMany('node', {async: true} )
+    subtree: DS.hasMany('node', {async: true} ),
+    
+    hasChildren: function() {
+        return this.get('subtree');
+    }.property('subtree')
 });
 
 App.Node.FIXTURES = [
     {
         id: 1,
-        name: 'folder 1',
+        name: 'folder 1A',
         subtree: [11]
     },
     {
