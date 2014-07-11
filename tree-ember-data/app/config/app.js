@@ -7,6 +7,3 @@ var config = {
 
 module.exports = Ember.Application.create(config);
 
-module.exports.ApplicationAdapter = DS.FixtureAdapter.extend({
-
-});

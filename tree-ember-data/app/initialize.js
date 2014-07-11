@@ -1,6 +1,7 @@
 'use strict';
 
 window.App = require('config/app');
+require('config/adapter');
 require('config/router');
 require('config/store');
 
