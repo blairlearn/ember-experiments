@@ -12,7 +12,7 @@ module.exports = App.Node = DS.Model.extend({
 App.Node.FIXTURES = [
     {
         id: 1,
-        name: 'folder 1A',
+        name: 'folder 1',
         subtree: [11]
     },
     {
