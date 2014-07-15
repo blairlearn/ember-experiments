@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports = App.PolyFolderView = Ember.View.extend({
-    templateName: 'polyFolder'
+    tname: 'polyFolder',
+    templateName: function(){
+        return this.tname;
+    }.property()
 });

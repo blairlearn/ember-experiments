@@ -1,6 +1,11 @@
 <h2>Welcome to Ember.js</h2>
-<p>Silly Treeview</p>
+
+<p>Treeview with View</p>
+
+{{view App.PolyFolderView folderlist=content.root}}
+
+<p>Treeview with Component</p>
 
 {{nested-folder folderlist=root}}
-{{!view App.PolyFolderView folderlist=root}}
+
 

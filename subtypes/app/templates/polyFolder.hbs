@@ -1,11 +1,11 @@
 {{#if view.folderlist}}
  <ul>
      {{#each folder in view.folderlist}}
-     <li>{{view App.PolyView node=view.folder}} | {{folder.name}}
+     <li>{{view App.PolyView node=folder}}
      {{#if folder.subtree}}
          {{nested-folder folderlist=folder.subtree}}
      {{/if}}
      </li>
      {{/each}}
  </ul>
- {{/if}}
+{{/if}}
