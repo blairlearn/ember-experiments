@@ -7,6 +7,6 @@ App.Zaboop.FIXTURES = [
     {
         id: 0,
         name: 'root',
-        root: [1,2,3,4,5,6]
+        root: [1,2,3]
     }
 ];
