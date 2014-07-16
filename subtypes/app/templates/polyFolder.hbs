@@ -3,7 +3,7 @@
      {{#each folder in view.folderlist}}
      <li>{{view App.PolyView node=folder}}
      {{#if folder.subtree}}
-         {{nested-folder folderlist=folder.subtree}}
+         {{view App.PolyFolderView folderlist=folder.subtree}}
      {{/if}}
      </li>
      {{/each}}
