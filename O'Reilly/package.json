@@ -4,7 +4,7 @@
     "description": "Description",
     "version": "1.0.0",
     "dependencies": {
-        "express" : "3.x",
+        "express" : "5.x",
         "http-proxy" : "~0.10.0"
     },
     "devDependencies" : {
